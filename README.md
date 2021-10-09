@@ -1,5 +1,4 @@
-.turing linguist-detectable=true
-
+Turing Language
 %Current Age Program
 %by Jim Xu
 %October 23, 2020
