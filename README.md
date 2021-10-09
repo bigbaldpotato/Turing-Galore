@@ -1,3 +1,5 @@
+.turing linguist-detectable=true
+
 %Current Age Program
 %by Jim Xu
 %October 23, 2020
