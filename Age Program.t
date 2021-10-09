@@ -1,5 +1,3 @@
-Turing Language
-
 %Current Age Program
 
 %by Jim Xu
