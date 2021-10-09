@@ -1,0 +1,45 @@
+%Ontario Sales Tax HST Calculator
+%by Jim Xu
+%October 20, 2020
+%This program was written to calculate the sales tax HST on fast food charged by the federal government
+
+%Variables to store user inputs
+var cost: real
+var total: real
+var rounded1: real
+var rounded2: real
+var roundedfinal: real
+
+%Introduction
+put repeat ("-", 80)
+put repeat (" ", 25), "Ontario Sales Tax HST Calculator"
+put repeat ("-", 80)
+
+put "Please input the cost of your fast food meal below, without the dollar sign"
+get cost
+
+%Adjusting cost to prevent any errors in the program if a negative cost is inputed
+if cost <= 0 then
+  cost:= 0
+end if
+
+%User input of meal cost, to be stored in variable "cost"
+%If the cost of the meal was over or equal to $4, a 13% tax is charged
+if cost >= 4.00 then
+  total:= cost*1.13
+  rounded1:= total*100
+  rounded2:= round (rounded1)
+  roundedfinal:= rounded2/100
+
+  put "The total cost of your meal is $", roundedfinal
+
+%If the cost of the meal was under $4, a 5% tax is charged
+else 
+  total:= cost*1.05
+  rounded1:= total*100
+  rounded2:= round (rounded1)
+  roundedfinal:= rounded2/100
+  
+  put "The total cost of your meal is $", roundedfinal
+  
+end if
